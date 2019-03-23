@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Яндекс Справочник</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png" type="png">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- BEGIN HEADER -->
+    <header class="header">
+        <!-- header left side -->
+        <div class="header__left-side">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="logo-yandex-main.svg" alt="Логотип Яндекс" class="header__link-main">
+                </a>
+                <a href="#">
+                    <img src="logo-yandex-service.svg" alt="Справочник" class="header__link-service">
+                </a>
+            </div>
+            <form class="header__search-group" action="#">
+                <div class="search-group__input">
+                    <input class="header__search-input" placeholder="Название, телефон, сайт">
+                </div>
+                <div class="search-group__button">
+                    <button class="header__search-button" role="button" type="submit">Найти</button>
+                </div>
+            </form>
+        </div>
+        <!-- header right side -->
+        <div class="header__right-side">
+            <a href="#" class="user-data">
+                <img src="user-avatar.png" alt="Изображение профиля пользователя" class="user-picture">
+            </a>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- BEGIN TAB LIST -->
+    <div class="tablist">
+        <div class="content-wrapper">
+            <nav class="navigation">
+                <ul class="tablist__items">
+                    <li class="tablist__tab tablist__tab_selected"><a class="tablist__text" href="#">Мои организации</a></li>
+                    <li class="tablist__tab"><a class="tablist__text" href="#">Заявки на изменения</a></li>
+                    <li class="tablist__tab"><a class="tablist__text" href="#">Мои заказы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- END TAB LIST -->
+
+    <!-- BEGIN MAIN CONTENT -->
+    <main class="content-wrapper">
+        <div class="page-company">
+            <div class="page-company__header">
+                <h1 class="page-company__title">Кафе Гладиатор</h1>
+                <div class="page-company__map-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="#">Страница на Картах</a>
+                </div>
+            </div>
+            <!-- BEGIN COMPANY INFO -->
+            <div class="page-company__info">
+                <div class="page-company__content-tabs">
+                    <ul class="control-group">
+                        <li class="content-toggle">
+                            <a class="toggle-button button__content-information" href="#">Информация</a>
+                        </li>
+                        <li class="content-toggle">
+                            <a class="toggle-button button__content-service" href="#">Услуги</a>
+                        </li>
+                        <li class="content-toggle">
+                            <a class="toggle-button button__content-photo" href="#">Фото</a>
+                        </li>
+                        <li class="content-toggle">
+                            <a class="toggle-button button__content-comment button_active" href="#">Отзывы</a>
+                        </li>
+                        <li class="content-toggle">
+                            <a class="toggle-button button__content-statistics" href="#">Статистика</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="page-company__content">
+                    <div class="content-comment__layout">
+                        <div class="content-title">
+                            <h2 class="comment-count"><span>12</span> отзывов об организации</h2>
+                            <div class="comment-rating"><span>9.8</span></div>
+                        </div>
+                        
+                        <div class="all-comments">
+                            <article class="comment">
+                                <div class="comment__header">
+                                    <a href="#" class="comment__user-data">
+                                        <img class="comment__user-picture" src="user-avatar-vasya.png" alt="Фото пользователя">
+                                        <h3 class="comment__user-name">Василий Привалов</h3>
+                                    </a>
+                                    <div class="comment__date">
+                                        <time class="comment__date-time">4 апреля 2016</time>
+                                    </div>
+                                    <div class="comment__rating comment__rating_voted">
+                                        <span>оценка:</span>
+                                        <i class="far fa-thumbs-up"></i>
+                                    </div>
+                                </div>
+                                <div class="comment__body">
+                                    <p class="comment__text">Очень давно знаю это место буквально со дня открытия и для нашей семьи в особенности ребенка, 
+                                    оно стало самым любимым. Здесь рай не только для взрослых по части вкусной итальянской кухни и романтики
+                                    <a class="comment__read-more" href="#">читать полностью</a></p> 
+                                </div>
+                                <div class="comment__footer">
+                                    <div class="comment__control">
+                                        <div class="comment__button">
+                                            <a class="button__answer" href="#">Ответить</a>
+                                        </div>    
+                                        <div class="comment__button">
+                                            <a class="button__complain" href="#">Пожаловаться</a>
+                                        </div>
+                                        <a class="comment__link" href="#">Ссылка на отзыв</a>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <article class="comment">
+                                <div class="comment__header">
+                                    <a href="#" class="comment__user-data">
+                                        <img src="user-avatar-ilya.png" alt="Фото пользователя" class="comment__user-picture">
+                                        <h3 class="comment__user-name">Илья Пряников</h3>
+                                    </a>
+                                    <div class="comment__date">
+                                        <time class="comment__date-time">9 мая 2016</time>
+                                    </div>
+                                    <div class="comment__rating comment__rating_voted">
+                                        <span>оценка:</span>
+                                        <i class="far fa-thumbs-up"></i>
+                                    </div>
+                                </div>
+                                <div class="comment__body">
+                                    <p class="comment__text">
+                                        Удивительное, хорошее место. Кухня на высоте. Интерьер крайне приятный, играет рояль каждый раз и для деток проводят мастер-классы.
+                                        На радость родителям - бесплатно!
+                                    </p> 
+                                </div>
+                                <div class="comment__footer">
+                                    <div class="comment__control">
+                                        <div class="comment__button">
+                                            <a class="button__answer" href="#">Ответить</a>
+                                        </div>    
+                                        <div class="comment__button">
+                                            <a class="button__complain" href="#">Пожаловаться</a>
+                                        </div>
+                                        <a class="comment__link" href="#">Ссылка на отзыв</a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="comment">
+                                <div class="comment__header">
+                                    <a href="#" class="comment__user-data">
+                                        <img src="user-avatar-lida.png" alt="Фото пользователя" class="comment__user-picture">
+                                        <h3 class="comment__user-name">Лидия Никарагуа</h3>
+                                    </a>
+                                    <div class="comment__date">
+                                        <time class="comment__date-time">23 октября 2016</time>
+                                    </div>
+                                    <div class="comment__rating">
+                                        <span>оценка:</span>
+                                        <i class="far fa-thumbs-up fa-rotate"></i>
+                                    </div>
+                                </div>
+                                <div class="comment__body">
+                                    <p class="comment__text">
+                                        Не понравилось. На Белорусской и Пролетарской как то поуютнее, обстановка поприятнее. Маленький выбор пива, а цена на него большая. 
+                                        Лёффе 0.33 290р!!! Не очень понравилась еда. Брали фирменные бургеры Мясо было пересоленное и переперченное. Плюс какое то слишком жирное. 
+                                        В итоге, просуммировав все, считаю, что при нынешнем уровне качестве заведения цены на еду и напитки должны быть ниже.
+                                    </p> 
+                                </div>
+                                <div class="comment__footer">
+                                    <div class="comment__control">
+                                        <div class="comment__button">
+                                            <a class="button__answer button_active" href="#">Ответить</a>
+                                        </div>    
+                                        <div class="comment__button">
+                                            <a class="button__complain" href="#">Пожаловаться</a>
+                                        </div>
+                                        <a class="comment__link" href="#">Ссылка на отзыв</a>
+                                    </div>
+                                    <div class="comment__answer">
+                                        <div class="answer__header">
+                                            <strong>Напишите ответ на отзыв</strong>
+                                        </div>
+                                        <div class="answer__textarea">
+                                            <button class="answer__clear-btn">
+                                                <span class="close-line close-line-l"></span>
+                                                <span class="close-line close-line-r"></span>
+                                            </button>
+                                            <textarea class="feedback-textarea"></textarea>
+                                        </div>
+                                        <div class="answer__button">
+                                            <button class="answer__publish-btn"><span>Опубликовать</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <button class="comment__show-all">
+                                <span class="show-all-btn">Все <span class="comment-count">134</span> отзывов</span>
+                            </button>
+
+                            <br><br><br><br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END COMPANY INFO -->
+        </div>
+    </main>
+    <!-- END MAIN CONTENT -->
+</body>
+
+</html>
