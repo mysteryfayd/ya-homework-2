@@ -398,6 +398,7 @@ a {
     padding: 5px;
     max-width: 538px;
     border: 1px solid #cfcfcf;
+    resize: none;
 }
 .feedback-textarea:focus {
     -webkit-box-shadow: 0 0 0 1px #fc0;
